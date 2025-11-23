@@ -1109,3 +1109,70 @@
   line-height: var(--body-s-line-height);
   font-style: var(--body-s-font-style);
 }
+
+/* 여기서 부터 마이페이지 */
+/* 사이드바 */
+.left-bg {
+  width: 20%;
+  height: 100vh;
+  background: #FCFAF4;
+}
+.element-mypage{
+  width: 55%;
+  padding: 10px;
+   margin: 10px;
+   margin-left: 55px;
+  
+}
+.mypage-text{
+   padding: 10px;
+   margin: 10px;
+  margin-left: 30px;
+   font-size: 22px;
+   font-weight: 500px;
+}
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item button {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+   padding-left: 40px; 
+  font-size: 13px;
+  transition: background-color 0.2s, color 0.2s;
+  border:#FCFAF4;
+  background: none;
+  cursor: pointer;
+}
+
+/* 기본 스타일 */
+.sidebar-item button.default {
+  color: #6A6457; /* gray-600 */
+}
+
+/* 활성화 스타일 */
+.sidebar-item button.active {
+  background-color: #F3F0E7;
+  color: #3F6825;
+  font-weight: 600;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.text-wrapper-2{
+  width: 110%;
+  text-align: left;
+  padding: 190px;
+   padding-left: 40px; 
+  font-size: 13px;
+  color: #6A6457;
+}
+
+
+

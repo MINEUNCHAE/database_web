@@ -1112,7 +1112,7 @@
 
 /* 여기서 부터 마이페이지 */
 /* 사이드바 */
-.left-bg {
+ .left-bg {
   width: 20%;
   height: 100vh;
   background: #FCFAF4;
@@ -1147,7 +1147,7 @@
   border:#FCFAF4;
   background: none;
   cursor: pointer;
-}
+} */
 
 /* 기본 스타일 */
 .sidebar-item button.default {
@@ -1187,6 +1187,48 @@ body {
   height: 100vh;
 }
 
+/* 네비게이션 css */
+.navigation_button {
+  position: fixed;   
+  top: 25px;        
+  right: 60px;       
+  width: 450px;
+  height: 45px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 7699.23px;
+  border: 0.77px solid;
+  border-color: #3f6825;
+  backdrop-filter: blur(3.46px) brightness(100%);
+  -webkit-backdrop-filter: blur(3.46px) brightness(100%);
+  justify-content: center;    /* 안의 텍스트들 가운데 정렬 */
+ 
+
+}
+.login-button-inner {
+  display: flex;
+  margin-top: 7.7px;
+  width: 130.9px; 
+  right: 140px;
+  height: 32px; 
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 7;
+}
+.navigation-text{
+ position: relative;
+  width: fit-content;
+  margin-right: 10px;
+  font-family: "Pretendard-Regular", Helvetica;
+  font-weight: 400;
+  color: #3f6825;
+  font-size: 12px;
+  letter-spacing: -0.46px;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
 
 
 

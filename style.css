@@ -1112,7 +1112,7 @@
 
 /* 여기서 부터 마이페이지 */
 /* 사이드바 */
-.left-bg {
+ .left-bg {
   width: 20%;
   height: 100vh;
   background: #FCFAF4;
@@ -1147,7 +1147,7 @@
   border:#FCFAF4;
   background: none;
   cursor: pointer;
-}
+} */
 
 /* 기본 스타일 */
 .sidebar-item button.default {
@@ -1174,5 +1174,151 @@ body {
   color: #6A6457;
 }
 
+.content-area {
+  flex: 1;             /* 슬라이드바 제외 나머지 전체 차지 */
+  padding: 30px;
+  background-color: white;
+  overflow-y: auto;    /* 내용 많아지면 스크롤 */
+  box-sizing: border-box;
+}
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 네비게이션 css */
+.navigation_button {
+  position: fixed;   
+  top: 25px;        
+  right: 60px;       
+  width: 450px;
+  height: 45px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 7699.23px;
+  border: 0.77px solid;
+  border-color: #3f6825;
+  backdrop-filter: blur(3.46px) brightness(100%);
+  -webkit-backdrop-filter: blur(3.46px) brightness(100%);
+  justify-content: center;    /* 안의 텍스트들 가운데 정렬 */
+ 
+
+}
+.login-button-inner {
+  display: flex;
+  margin-top: 7.7px;
+  width: 130.9px; 
+  right: 140px;
+  height: 32px; 
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 7;
+}
+.navigation-text{
+ position: relative;
+  width: fit-content;
+  margin-right: 10px;
+  font-family: "Pretendard-Regular", Helvetica;
+  font-weight: 400;
+  color: #3f6825;
+  font-size: 12px;
+  letter-spacing: -0.46px;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
+
+/* //회원수정 내용 */
+.container {
+    width: 100%;
+    max-width: 700px; /* 전체 폼 컨테이너 너비 설정 */
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 구분선 */
+.divider {
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* 안내 텍스트 (이메일 수정 불가) */
+.guide-text {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 폼 그룹 (레이블과 입력 필드를 묶는 컨테이너) */
+.form-group {
+    display: flex; /* Flexbox를 사용하여 레이블과 입력 필드를 가로로 배열 */
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* 레이블 (이메일, 전화번호, 생년월일) */
+.form-group label {
+    flex-basis: 150px; /* 레이블 영역의 너비를 고정 */
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 입력 필드 컨테이너 */
+.input-container {
+    flex-grow: 1; /* 입력 필드가 남은 공간을 모두 차지하도록 설정 */
+}
+
+/* 입력 필드 스타일 */
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+    height: 40px; /* 입력 필드 높이 고정 */
+}
+
+/* 읽기 전용 (이메일) 필드 스타일 */
+.form-group input[readonly] {
+    background-color: #f7f7f7; /* 이미지와 유사한 배경색 */
+    color: #777;
+    cursor: default;
+}
+
+/* 버튼 그룹 (버튼을 중앙 정렬) */
+.button-group {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* 수정하기 버튼 스타일 */
+.submit-button {
+    background-color: #558B2F; /* 이미지와 유사한 녹색 계열 */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 150px; /* 버튼 최소 너비 */
+}
+
+.submit-button:hover {
+    background-color: #406823; /* 호버 시 색상 어둡게 */
+}
 
 

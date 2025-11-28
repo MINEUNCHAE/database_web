@@ -1,0 +1,42 @@
+<?php
+// 필요하면 여기에 PHP 코드 작성 가능
+// 예: DB 연결, 세션 체크 등
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="rectangle"></div>
+      <div class="view"></div>
+      <div class="left-bg">
+      <img class="element-mypage" src="img/sisibibi_logo.png" />
+      <div class="mypage-text">마이페이지</div>
+      
+     <nav id="my-sidebar"></nav>
+    <div class="text-wrapper-2">로그아웃</div>
+    </div>
+<div id="content-area" class="content-area">
+  
+</div>
+ <script src="mysidebar.js"></script>
+<div>
+       <div class="navigation_button">
+            <div class="login-button-inner">
+             <span class="navigation-text">예약하기</span>
+             <span class="navigation-text">정보소개</span>
+             <span class="navigation-text">부대시설</span>
+             <span class="navigation-text">정보마당</span>
+             <span class="navigation-text">마이페이지</span>
+            </div>
+          </div>
+    </div>
+    
+  </body>
+</html>

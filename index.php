@@ -1,0 +1,161 @@
+<?php
+// 필요하면 여기에 PHP 코드 작성 가능
+// 예: DB 연결, 세션 체크 등
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>11월 제철 식료품 가격</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <header class="header-section">
+        <div class="rectangle"></div>
+        <nav class="top-navigation">
+          <img class="logo" src="img/sisibibi_logo.png" alt="시세비비 로고" />
+          <div class="login-button">
+            <div class="login-button-inner">
+              <img class="user-icon" src="img/user.png" alt="사용자 아이콘" />
+              <span class="login-text">로그인 / 회원가입</span>
+            </div>
+          </div>
+        </nav>
+        <h1 class="main-heading">
+          <span class="highlight-text">11월</span>
+          <span class="normal-text"> 제철 식료품 가격은?</span>
+        </h1>
+        <form class="search-form" role="search">
+          <div class="search-input-wrapper">
+            <label for="search-input" class="visually-hidden">검색어 입력</label>
+            <input
+              type="search"
+              id="search-input"
+              class="search-input"
+              placeholder="검색어를 입력하세요."
+              aria-label="검색어를 입력하세요"
+            />
+          </div>
+          <button type="submit" class="search-button" aria-label="검색">
+            <div class="search-button-bg"></div>
+            <img class="search-icon" src="img/find.png" alt="찾기" />
+          </button>
+        </form>
+        <fieldset class="filter-options">
+          <legend class="visually-hidden">지역 필터</legend>
+          <div class="radio-option">
+            <input type="radio" id="filter-average" name="location-filter" class="radio-input" checked />
+            <label for="filter-average" class="radio-label">평균</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="filter-jochiwon" name="location-filter" class="radio-input" />
+            <label for="filter-jochiwon" class="radio-label">조치원</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="filter-jungcheon" name="location-filter" class="radio-input" />
+            <label for="filter-jungcheon" class="radio-label">중천동</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="filter-eojin" name="location-filter" class="radio-input" />
+            <label for="filter-eojin" class="radio-label">어진동</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="filter-garam" name="location-filter" class="radio-input" />
+            <label for="filter-garam" class="radio-label">가람동</label>
+          </div>
+        </fieldset>
+      </header>
+      <main class="main-content">
+        <section class="seasonal-products-section">
+          <div class="section-header">
+            <h2 class="section-title">'11월' 재철 12개</h2>
+            <div class="sort-dropdown">
+              <button class="sort-button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="sort-label">추천순</span>
+                <img class="icon" src="img/arrow_back_ios.png" alt="사용자 아이콘" />
+              </button>
+            </div>
+          </div>
+          <div class="products-table">
+            <div class="table-header">
+              <div class="header-cell header-product">품목</div>
+              <div class="header-cell header-market">시장</div>
+              <div class="header-cell header-mart">마트(평균)</div>
+              <div class="header-cell header-city">세종시</div>
+            </div>
+            <article class="product-row">
+              <div class="product-info">
+                <button class="favorite-icon" aria-label="즐겨찾기 추가" aria-pressed="false">
+                  <img src="img/heart.png" alt="" />
+                </button>
+                <div class="product-name-wrapper">
+                  <h3 class="product-name">사과</h3>
+                  <span class="product-unit">10개</span>
+                </div>
+              </div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+            </article>
+            <article class="product-row">
+              <div class="product-info">
+                <button class="favorite-icon" aria-label="즐겨찾기 추가" aria-pressed="false">
+                  <img src="img/heart.png" alt="" />
+                </button>
+                <div class="product-name-wrapper">
+                  <h3 class="product-name">사과</h3>
+                  <span class="product-unit">10개</span>
+                </div>
+              </div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+            </article>
+            <article class="product-row">
+              <div class="product-info">
+                <button class="favorite-icon" aria-label="즐겨찾기 추가" aria-pressed="false">
+                  <img src="img/heart.png" alt="" />
+                </button>
+                <div class="product-name-wrapper">
+                  <h3 class="product-name">사과</h3>
+                  <span class="product-unit">10개</span>
+                </div>
+              </div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+            </article>
+            <article class="product-row">
+              <div class="product-info">
+                <button class="favorite-icon" aria-label="즐겨찾기 추가" aria-pressed="false">
+                  <img src="img/heart.png" alt="" />
+                </button>
+                <div class="product-name-wrapper">
+                  <h3 class="product-name">사과</h3>
+                  <span class="product-unit">10개</span>
+                </div>
+              </div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+              <div class="price-cell">26,422</div>
+            </article>
+          </div>
+        </section>
+        <aside class="favorites-section">
+          <h2 class="section-title">즐겨찾기</h2>
+          <div class="favorites-empty-state">
+            <div class="empty-state-icon-wrapper">
+              <div class="empty-state-circle"></div>
+              <img class="empty-state-icon" src="img/heart.png" alt="" />
+            </div>
+            <p class="empty-state-text">즐겨찾기를 설정하고<br />원하는 상품을 빠르게 알아보세요.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

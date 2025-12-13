@@ -1,3 +1,7 @@
+<?php
+// 필요하면 여기에 PHP 코드 작성 가능
+// 예: DB 연결, 세션 체크 등
+?>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -13,23 +17,12 @@
       <header class="header-section">
         <div class="rectangle"></div>
         <nav class="top-navigation">
-
-          <img class="logo" src="img/sisibibi_logo.png" alt="시세비비 로고"  />
-          <div class="button-container">
-          <div class="m-button">
-            <div class="m-button-inner">
-              <span class="login-text">재철 확인하기</span>
-              <span class="login-text">정보소개</span>
-              <span class="login-text">정보 마당</span>
-              <span class="login-text" onclick="location.href='mypage.html'">마이페이지</span>
-            </div>
-            </div>
-            <div class="login-button">
-            <!-- <div class="login-button-inner"> -->
+          <img class="logo" src="img/sisibibi_logo.png" alt="시세비비 로고" />
+          <div class="login-button">
+            <div class="login-button-inner">
               <img class="user-icon" src="img/user.png" alt="사용자 아이콘" />
               <span class="login-text">로그인 / 회원가입</span>
-            <!-- </div> -->
-          </div>
+            </div>
           </div>
         </nav>
         <h1 class="main-heading">

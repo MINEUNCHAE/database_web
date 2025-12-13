@@ -1,3 +1,7 @@
+<?php
+// 필요하면 여기에 PHP 코드 작성 가능
+// 예: DB 연결, 세션 체크 등
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +16,7 @@
       <div class="rectangle"></div>
       <div class="view"></div>
       <div class="left-bg">
-      <img class="element-mypage" src="img/sisibibi_logo.png"onclick="location.href='index.html'" />
+      <img class="element-mypage" src="img/sisibibi_logo.png" />
       <div class="mypage-text">마이페이지</div>
       
      <nav id="my-sidebar"></nav>

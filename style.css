@@ -622,53 +622,59 @@
   height: 80px;
   aspect-ratio: 3.09;
 }
-
-.login-button {
-  margin-top: 8.8px;
-  width: 184.8px;
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  margin-left: -900px;
+}
+.m-button {
+  width: 510px;
   height: 61.6px;
   display: flex;
+  align-items: center;
+  justify-content: center; 
   background-color: #ffffff;
-  border-radius: 7699.23px;
-  border: 0.77px solid;
-  border-color: #3f6825;
-  backdrop-filter: blur(3.46px) brightness(100%);
-  -webkit-backdrop-filter: blur(3.46px) brightness(100%);
+  border-radius: 9999px;
+  border: 0.77px solid #3f6825;
 }
 
-.login-button-inner {
+.m-button-inner {
   display: flex;
-  margin-top: 7.7px;
-  width: 130.9px;
-  height: 46.2px;
-  margin-left: 26.9px;
-  position: relative;
   align-items: center;
   justify-content: center;
-  gap: 6.16px;
-  padding: 6.16px;
+  gap: 50px;   /* 메뉴 간 간격 */
+
+  padding: 0;
+}
+
+.login-button {
+ width: 194.8px;
+  height: 61.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  border: 0.77px solid #3f6825;
 }
 
 .user-icon {
-  position: relative;
-  width: 18.48px;
+ 
+  width: 15.48px;
   height: 18.48px;
-  margin-left: -4.03px;
+   display: block; /* 추가 */
 }
 
 .login-text {
-  position: relative;
-  width: fit-content;
-  margin-right: -4.03px;
-  font-family: "Pretendard-Regular", Helvetica;
-  font-weight: 400;
+  font-size: 16px;
   color: #3f6825;
-  font-size: 15.4px;
-  letter-spacing: -0.46px;
-  line-height: 21.6px;
   white-space: nowrap;
+    margin: 0; /* 추가 */
+  padding: 0; /* 추가 */
 }
-
 .main-heading {
   position: absolute;
   top: 183px;
@@ -971,7 +977,7 @@
 }
 
 .product-row:nth-of-type(2) {
-  top: 734px;
+  top: 730px;
 }
 
 .product-row:nth-of-type(3) {
@@ -993,17 +999,29 @@
 .favorite-icon {
   width: 30px; 
   height: 30px;
-  /* background: transparent; */
+  /* 둥근 모양을 위한 속성 추가 및 수정 */
+  background-color: #f0f0f0; /* 배경색 지정 (원하는 색상으로 변경 가능) */
+  border-radius: 50%; /* 너비/높이와 같은 값으로 설정하여 완벽한 원형 생성 */
+  
   border: none;
   cursor: pointer;
-  padding: 100;
+  /* padding: 100;은 부적절한 값입니다. px 단위를 사용하거나 제거합니다. */
+  padding: 0; 
   flex-shrink: 0;
+  
+  /* 아이콘(이미지)을 원형 배경의 중앙에 정렬하기 위해 추가 (선택 사항) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .favorite-icon img {
   width: 100%;
   height: auto;
   display: block;
+  /* 아이콘 크기를 약간 줄여서 둥근 테두리와 간격 확보 (선택 사항) */
+  width: 50%; 
+  height: 50%;
   opacity: 0.7;
 }
 
@@ -1011,7 +1029,6 @@
   outline: 2px solid #4a90e2;
   outline-offset: 2px;
 }
-
 .product-name-wrapper {
   display: flex;
   align-items: baseline;
@@ -1071,8 +1088,8 @@
 
 .empty-state-icon-wrapper {
   position: relative;
-  width: 105px;
-  height: 105px;
+  width: 90px;
+  height: 0px;
   margin: 0 auto;
 }
 
@@ -1321,4 +1338,58 @@ body {
     background-color: #406823; /* 호버 시 색상 어둡게 */
 }
 
+/* 마이페이지 내정보 */
+
+        .mypage-container {
+            width: 900px;
+            margin: 40px auto;
+        }
+
+        /* 프로필 영역 */
+        .profile-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #ddd;
+            margin-right: 40px;
+        }
+
+        .profile-info div {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .profile-info span.title {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        .title_e{
+           font-weight: bold;
+        }
+        /* 즐겨찾기 영역 */
+        .favorite-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .favorite-empty {
+            text-align: center;
+            margin-top: 100px;
+            color: #777;
+        }
+
+        .favorite-empty img {
+            width: 80px;
+            opacity: 0.5;
+            margin-bottom: 20px;
+        }
 
